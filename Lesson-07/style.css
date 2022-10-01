@@ -1,0 +1,9 @@
+span{
+    width: 300px;
+    height: 40px;
+    background-color: rgb(172, 153, 76);
+    margin: 2px 0;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+}

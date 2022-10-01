@@ -1,0 +1,19 @@
+.text{
+    display: inline-block;
+    width: 100px;
+    background-color: yellow;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.info{
+    width: 400px;
+    background-color: black;
+    color: #fff;
+    display: none;
+}
+
+.item:hover .info{
+    display: block;
+}

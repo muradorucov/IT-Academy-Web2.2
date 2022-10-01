@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* 
+.main-container{
+    
+    position: relative;
+    padding: 40px;
+    background-color: yellow;
+    margin: 40px;
+} */
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    /* position: relative; */
+    width: 80%;
+    padding: 10px;
+    border: 2px solid tomato;
+    background-color: blueviolet;
+}
+.item{
+    
+    cursor: pointer;
+    position: relative;
+    width: 100px;
+    height: 80px;
+    border: 1px solid blue;
+    background-color: #fff;
+}
+
+.item:hover{
+    bottom: 5px;
+}
