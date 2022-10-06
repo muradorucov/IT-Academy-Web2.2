@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    width: 960px;
+    background-color: bisque;
+    border: 1px solid red;
+    padding: 10px;
+}
+img{
+    width: 400px;
+}
+.item{
+    width: 33%;
+    background-color: tomato;
+    border: 1px solid blue;
+    height: 300px;
+    margin: 10px;
+}
+
+
+/* Planshet */
+@media screen and (min-width: 375px) and (max-width: 830px) {
+ 
+    .container{
+        display: block;
+    }
+    .item{
+        width: 90%;
+    }
+    img{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 375px){
+
+}

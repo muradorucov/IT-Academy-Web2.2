@@ -1,0 +1,22 @@
+.container {
+    width: 80vw;
+    height: 500px;
+    border: 1px solid black;
+    background-color: bisque;
+    padding: 10px;
+    display: flex;
+}
+
+.first-item {
+    width: 22%;
+    height: 40vh;
+    border: 2px solid red;
+    background-color: tomato;
+}
+
+.second-item {
+    width: 75%;
+    height: calc(100vh - 300px);
+    background-color: blueviolet;
+
+}
