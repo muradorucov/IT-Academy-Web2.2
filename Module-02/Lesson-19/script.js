@@ -15,3 +15,27 @@
 // }
 
 // hello()
+
+
+let obj = {
+    id: 4,
+    companyName: "Tokyo Traders",
+    contactName: "Yoshi Nagase",
+    contactTitle: "Marketing Manager",
+    // myFunc: function () {
+    //     console.log(this.contactTitle)
+    // }
+    // myFunc() {
+    //     console.log(this.contactTitle)
+    // }
+
+    myFunc(param) {
+        this.contactTitle = param
+    }
+}
+
+
+
+console.log(obj.contactTitle)
+obj.myFunc("Programming Department");
+console.log(obj.contactTitle)

@@ -9,7 +9,7 @@ let numbers = [4, 100, 5, 1004, -4, -3];
 
 
 //az character
-let azSimvol = ['ə', 'ş', 'ç', 'ı', 'ü', 'ö', 'ğ'];
+let azSimvol = ['ə', 'e', 's', 'ş', 'ç', 'ı', "i", 'ü', 'ö', 'ğ'];
 
 
 //Upper and lower str
@@ -19,15 +19,15 @@ let upperToLower = ['c', 'A', 'G', 'a'];
 //obj data type
 let obj = [
     {
-        id: 4,
+        id: 6,
         companyName: "Tokyo Traders"
     },
     {
-        id: 5,
+        id: 4,
         companyName: "Cooperativa de Quesos 'Las Cabras'"
     },
     {
-        id: 6,
+        id: 5,
         companyName: "Mayumi's",
     }
 ]
@@ -51,36 +51,41 @@ console.log('<<<<<<<<<<<<<<<<<<<<<<<<<<<<<====================>>>>>>>>>>>>>>>>>>
 
 
 //numbers sort
-numbers.sort((a, b) => {
-    if (a > b) {
-        return 1;
-    }
-    else if (a < b) {
-        return -1;
-    }
-    return 0;
-});
+
+// numbers.sort((a, b) => {
+//     if (a > b) {
+//         return 100;
+//     }
+//     else if (a < b) {
+//         return -10000283;
+//     }
+//     return 0;
+// });
 
 numbers.sort((a, b) => {
-    return a - b;
+    return b - a;
 });
 
 
 
 //azSimvol sort
+let azSimvolf = ['ə', 'e', 's', 'ş', 'ç', 'ı', 'ü', 'ö', 'ğ'];
+
 azSimvol.sort((a, b) => {
     return a.localeCompare(b)
 })
 
 // upperToLower sort
+//let upperToLower = ['c', 'A', 'G', 'a'];
+
 upperToLower.sort((a, b) => {
     return a.toLowerCase().localeCompare(b.toLowerCase())
 })
 
 
-//obj sort
+// obj sort
 // obj.sort((a, b) => {
-//     return a.id - b.id
+//     return b.id - a.id
 // })
 
 
@@ -102,3 +107,7 @@ console.log('<<<<<<<<<<<<<<<<<<<<<<<<<<<<<====================>>>>>>>>>>>>>>>>>>
 //     companyName: "Tokyo Traders"
 // }
 // console.log(Object.keys(ob))
+
+let chiken = ['🥚', '🐔']
+
+console.log(chiken.sort());
