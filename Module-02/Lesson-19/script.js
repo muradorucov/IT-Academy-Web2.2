@@ -17,7 +17,7 @@
 // hello()
 
 
-let obj = {
+/*let obj = {
     id: 4,
     companyName: "Tokyo Traders",
     contactName: "Yoshi Nagase",
@@ -38,4 +38,24 @@ let obj = {
 
 console.log(obj.contactTitle)
 obj.myFunc("Programming Department");
-console.log(obj.contactTitle)
+console.log(obj.contactTitle)*/
+
+
+obj = {
+    name: "murad",
+    surename: "orujov",
+    age: 23,
+    myfunc() {
+        simvols = ''
+        Object.keys(obj).forEach((item) => {
+            if (item !== "myfunc") {
+                simvols += item;
+            }
+        })
+
+        return simvols.length
+    }
+}
+
+
+console.log(obj.myfunc());
