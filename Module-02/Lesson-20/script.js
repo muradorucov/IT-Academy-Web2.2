@@ -43,22 +43,36 @@
 // console.log(user3);
 // console.log(user4);
 
-class Person {
-    constructor() {
-        this.name = "Cavad",
-            this.age = 40
-    }
-    getAgeChange() {
-       this.age += 1
-    }
+// class Person {
+//     constructor() {
+//         this.name = "Cavad",
+//             this.age = 40
+//     }
+//     getAgeChange() {
+//        this.age += 1
+//     }
 
-}
+// }
 
 
-const person1 = new Person()
-console.log(person1)
-person1.getAgeChange()
+// const person1 = new Person()
+// console.log(person1)
+// person1.getAgeChange()
 
-console.log(person1.getAgeChange())
+// console.log(person1.getAgeChange())
 
 // console.log();
+
+
+
+
+
+
+// myFunc();
+// var myFunc= function(){
+//     console.log(1);
+// }
+// function myFunc(){
+//     console.log(2);
+// }
+// myFunc()
