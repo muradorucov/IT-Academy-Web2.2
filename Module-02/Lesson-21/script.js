@@ -194,3 +194,125 @@
 
 
 
+
+
+
+// class User {
+//     constructor(id, name) {
+//         this.id = id;
+//         this.name = name;
+//     }
+//     rename(newName) {
+//         return this.name = newName;
+//     }
+// }
+
+// const user1 = new 
+
+// class UsersList {
+//     constructor(users, currentId) {
+//         this.users = users;
+//         this.currentId = currentId;
+//     }
+//     addUser(name) {
+
+//     }
+//     remvoeUser(id) {
+
+//     }
+//     renameUser(id) {
+
+//     }
+//     getAllUsersString() {
+
+//     }
+// }
+
+
+// class Application extends UsersList {
+//     constructor(users, currentId) {
+//         super(users, currentId)
+
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class User {
+//     constructor(id, name) {
+//         this.id = id;
+//         this.name = name;
+//     }
+//     rename(param) {
+//         this.name = param
+//     }
+// }
+
+// class UsersList {
+//     constructor() {
+//         this.users = [];
+//         this.currentId = this.users.length;
+//     }
+//     addUser(name) {
+//         this.currentId += 1;
+//         this.users.push(new User(this.currentId, name));
+//         return this.users;
+//     }
+//     removeUser(id) {
+//         for (let i = 0; i < this.users.length; i++) {
+//             if (this.users[i].id == id) {
+//                 this.users.splice(i, 1);
+//             }
+//         }
+//         return this.users;
+//     }
+//     renameUser(id, name) {
+//         for (let i = 0; i < this.users.length; i++) {
+//             if (this.users[i].id == id) {
+//                 this.users[i].name = name;
+//             }
+//         }
+//         return this.users;
+//     }
+//     getAllUsersString() {
+//         let metn = [];
+//         for (let i = 0; i < this.users.length; i++) {
+//             metn.push(JSON.stringify(this.users[i]));
+//         }
+//         console.log(metn.join(" ; "));
+//     }
+// }
+
+// class Application extends UsersList {
+//     constructor() {
+//         super()
+//         this.usersList = new UsersList()
+//     }
+// }
+
+
+// const app = new Application();
+// console.log(app)
+// app.addUser("Murad");
+// app.addUser("Murad");
+// app.addUser("Murad");
+// console.log(app.users)
+
+
+// console.log(app.usersList.users);
+// app.usersList.getAllUsersString();
