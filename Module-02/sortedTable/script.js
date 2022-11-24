@@ -46,8 +46,7 @@ thBtn.addEventListener("click", () => {
         arr.sort((a, b) => {
             return a.textContent.localeCompare(b.textContent)
         })
-        listRow.forEach((element, i) => {
-            element = arr[i];
+        arr.forEach((element) => {
             tbody.append(element)
         })
         sorted = false;
@@ -56,8 +55,7 @@ thBtn.addEventListener("click", () => {
         arr.sort((a, b) => {
             return b.textContent.localeCompare(a.textContent)
         })
-        listRow.forEach((element, i) => {
-            element = arr[i];
+        arr.forEach((element) => {
             tbody.append(element)
         })
         sorted = true;
