@@ -1,7 +1,9 @@
 let username = document.querySelector("#username")
-let password = document.querySelector("#paswword")
+let password = document.querySelector("#paswword");
+let hiddenID = document.querySelector("#hiddenID");
 let mail = document.querySelector("#mail")
-let btn = document.querySelector("#btn")
+let btn = document.querySelector("#btn");
+let update = document.querySelector("#update");
 let tbody = document.querySelector("tbody");
 
 let userList = [];
@@ -13,6 +15,7 @@ function Users(id, name, password, mail) {
     this.password = password;
     this.mail = mail
 }
+
 
 btn.addEventListener('click', (e) => {
     e.preventDefault();
@@ -49,14 +52,14 @@ btn.addEventListener('click', (e) => {
     btnDelete.className = "btn btn-danger";
     btnEdit.className = "btn btn-secondary";
 
-    userList.forEach(item=>{
+    userList.forEach(item => {
         tdId.textContent = item.id
         tdName.textContent = item.name
         tdPassword.textContent = item.password
         tdMail.textContent = item.mail
     });
 
-    btnDelete.addEventListener('click', (e)=>{
+    btnDelete.addEventListener('click', (e) => {
         customID = e.target.parentElement.parentElement.firstChild.textContent
         trDeleted = e.target.parentElement.parentElement
         userList = userList.filter(item => item.id != customID)
@@ -64,6 +67,48 @@ btn.addEventListener('click', (e) => {
 
         trDeleted.remove()
     })
+    btnEdit.addEventListener('click', (e) => {
+        btn.style.display = "none";
+        update.style.display = "block";
 
+        customID = e.target.parentElement.parentElement.firstChild.textContent
+        userList.forEach(item => {
+            if (item.id == customID) {
+                username.value = item.name;
+                password.value = item.password;
+                mail.value = item.mail;
+                hiddenID.value = item.id
+            }
+        })
+
+    })
+
+});
+
+
+update.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    console.log(hiddenID.value);
+
+
+    arr1= userList.map(item => {
+        if (item.id == hiddenID.value) {
+            console.log(item.name,username.value);
+            console.log(password.value,item.password);
+            console.log(mail.value,item.mail);
+            item.name = username.value;
+            password.value = item.password;
+            mail.value = item.mail;
+        }
+
+        return item
+    })
+
+    console.log(arr1);
+
+
+    btn.style.display = "block";
+    update.style.display = "none";
 })
 

@@ -1,0 +1,37 @@
+[
+    {
+        "name": "CATALOG",
+        "icon": "bi bi-journal-text",
+        "id": "1"
+    },
+    {
+        "name": "PROGRESS",
+        "icon": "bi bi-graph-up",
+        "id": "2"
+    },
+    {
+        "name": "JOIN GROUP",
+        "icon": "bi bi-people",
+        "id": "3"
+    },
+    {
+        "name": "DISCUSSIONS",
+        "icon": "bi bi-chat-right-quote",
+        "id": "4"
+    },
+    {
+        "name": "CALENDAR",
+        "icon": "bi bi-calendar3",
+        "id": "5"
+    },
+    {
+        "name": "DISCUSSIONS",
+        "icon": "bi bi-chat-right-quote",
+        "id": "4"
+    },
+    {
+        "name": "CALENDAR",
+        "icon": "bi bi-calendar3",
+        "id": "5"
+    }
+]
