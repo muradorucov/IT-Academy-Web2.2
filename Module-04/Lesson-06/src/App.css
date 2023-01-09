@@ -1,0 +1,17 @@
+button{
+    cursor: pointer;
+    margin: 30px 0 0 0 ;
+    padding: 15px 70px;
+    font-size: 20px;
+    outline:none;
+    border: 1px solid red;
+    color: #fff;
+}
+
+.btn{
+    background-color: tomato;
+}
+
+.btn-blue{
+    background-color: blueviolet;
+}
