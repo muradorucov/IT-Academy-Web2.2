@@ -1,28 +1,22 @@
-import { useState } from 'react'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Contact from './Contact'
 import About from './About'
 import Home from './Home'
-import Navbar from './Navbar'
-import NotFound from './NotFound'
-import Info from "./Info"
+import History from './History'
 
 function App() {
 
   return (
     <>
 
-      <Navbar />
 
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/about/' element={<About />}>
-          <Route path='info' element={<Info />} />
+        <Route index element={<Home />} />
+        <Route path="/haqqımızda/" element={<About />}>
+          <Route path="tariximiz" element={<History />} />
+          <Route path="rehberlik" element={<Contact />} />
         </Route>
-
-        <Route path='*' element={<NotFound />} />
       </Routes>
     </>
 

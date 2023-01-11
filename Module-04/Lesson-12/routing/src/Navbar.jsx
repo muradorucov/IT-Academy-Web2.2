@@ -23,7 +23,7 @@ export default function Navbar() {
                             Home <span className="sr-only">(current)</span>
                         </Link>
                     </li>
-                    
+
                     <li className="nav-item">
                         <Link className="nav-link" to="/about">
                             About
@@ -31,7 +31,7 @@ export default function Navbar() {
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/about/info">
-                            About
+                            About INfo page
                         </Link>
                     </li>
                     <li className="nav-item">

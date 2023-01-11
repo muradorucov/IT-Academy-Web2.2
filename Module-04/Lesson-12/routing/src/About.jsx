@@ -1,11 +1,14 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-
-export default function About() {
+import { Outlet } from 'react-router-dom'
+const About = () => {
     return (
         <div>
             About
-            <Link to="info"> Ifo ucun click et </Link>
+            <Outlet/>
         </div>
+            
+        
+
     )
 }
+export default About 
